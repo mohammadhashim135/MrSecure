@@ -8,7 +8,7 @@ Mr. Secure is a **React-based password manager** that allows users to securely s
 
 ## **Features** 🚀  
 ✅ **Secure Password Storage** – Store credentials safely in the browser’s local storage.  
-✅ **Strong Password Validation** – Ensures passwords meet security standards (at least 8 characters, with a number and special character).  
+✅ **Strong Password Validation** – Ensures passwords meet security standards.  
 ✅ **Edit & Update Entries** – Modify saved credentials easily.  
 ✅ **One-Click Copy** – Quickly copy usernames and passwords to the clipboard.  
 ✅ **Delete Functionality** – Remove credentials when no longer needed.  
