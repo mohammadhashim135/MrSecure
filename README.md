@@ -81,7 +81,7 @@ MrSecure/
 ![Mr. Secure Dark](https://github.com/user-attachments/assets/00ff9c68-1311-461b-bd7b-d65c3d9ec45c)
 ![Mr. Secure Light](https://github.com/user-attachments/assets/ea237ecd-9c3b-45d7-ac7e-77a6d14b6649)
 
---
+---
 ## **Contributing** 🤝
 Contributions are welcome! If you’d like to improve Mr. Secure, feel free to fork the repo and submit a pull request.
 
