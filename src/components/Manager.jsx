@@ -8,8 +8,8 @@ const Manager = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [savedPasswords, setSavedPasswords] = useState([]);
-    const [editingIndex, setEditingIndex] = useState(null); // Track the index of editing password
-    const [buttonImage, setButtonImage] = useState("public/Dashboard.gif");
+    const [editingIndex, setEditingIndex] = useState(null);
+    const [buttonImage, setButtonImage] = useState("src/assets/Dashboard.gif");
 
     useEffect(() => {
         const storedPasswords = JSON.parse(localStorage.getItem("passwords")) || [];
@@ -52,16 +52,16 @@ const Manager = () => {
             toast.success("Password added successfully!", { position: "top-right" });
         }
 
-        localStorage.setItem("passwords", JSON.stringify(savedPasswords));
+        localStorage.setItem("passwords", JSON.stringify([...savedPasswords, newEntry]));
 
         setWebsite("");
         setUsername("");
         setPassword("");
 
         // Change button image to unlink.gif and reset after 1 second
-        setButtonImage("public/unlink.gif");
+        setButtonImage("src/assets/unlink.gif");
         setTimeout(() => {
-            setButtonImage("public/Dashboard.gif");
+            setButtonImage("src/assets/Dashboard.gif");
         }, 500);
     };
 
@@ -150,7 +150,7 @@ const Manager = () => {
                     <div className="overflow-x-auto">
                         <table className="min-w-full border border-gray-300 dark:border-gray-600">
                             <thead>
-                                <tr className="bg-purple-950 text-white dark:bg-purple-300 dark:text-black">
+                                <tr className="bg-purple-950 text-white dark:bg-purple-300 dark:text-black ">
                                     <th className="p-2 border border-gray-400">Site Name</th>
                                     <th className="p-2 border border-gray-400">User Name</th>
                                     <th className="p-2 border border-gray-400">Password</th>
@@ -184,7 +184,7 @@ const Manager = () => {
                                                 </button>
                                             </div>
                                         </td>
-                                        <td className="p-2 border border-gray-400 space-x-2">
+                                        <td className="p-2 border border-gray-400 space-x-2   ">
                                             <button className="text-blue-900 dark:text-blue-600" onClick={() => editPassword(index)} title="Edit">
                                                 <i className="fa-solid fa-pencil"></i>
                                             </button>
