@@ -1,5 +1,5 @@
 # **Mr. Secure** 🔐  
-**A Secure and User-Friendly Password Manager**  
+**A Secure and User Friendly Password Manager**  
 
 ## **Overview**  
 Mr. Secure is a **React-based password manager** that allows users to securely store, edit, and manage their credentials for different websites. It features **local storage**, **password validation**, and **one-click clipboard copying** for ease of use.  
